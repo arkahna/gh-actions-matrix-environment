@@ -20,4 +20,4 @@ jobs:
         run: |
           echo "Running on ${{ matrix.os }} with Node.js ${{ matrix.node }}"
           echo "This is matrix job #${{ strategy.job-index }}"
-          echo "Environment Var #${{ env.customer_name }}"
+          echo "Environment Var #${{ vars.customer_name }}"
