@@ -12,7 +12,7 @@ jobs:
   test:
     strategy:
       matrix:
-        environment: [customera, customerb, customerc]
+        environment: ${{ fromJSON(vars.environment_list) }}
     runs-on: ubuntu-latest
     environment: ${{matrix.environment}}
     steps:
